@@ -163,9 +163,9 @@
         
         // if the left corner is one complete width off the screen,
         // move it to the right
-        if (cloud.position.x <= (-1 * cloud.contentSize.width)) {
+        if (cloud.position.x <= (-.5 * cloud.contentSize.width)) {
             cloud.position = ccp(cloud.position.x +
-                                 2 * cloud.contentSize.width, cloud.position.y);
+                                 1.5 * cloud.contentSize.width, cloud.position.y);
         }
     }
     
