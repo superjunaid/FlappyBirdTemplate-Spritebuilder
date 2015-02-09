@@ -177,8 +177,8 @@
         character.physicsBody.angularVelocity = angularVelocity;
     }
     
-    if ((_sinceTouch > 0.5f)) {
-        [character.physicsBody applyAngularImpulse:-400.f*delta];
+    if ((_sinceTouch > 0.9f)) {
+        [character.physicsBody applyAngularImpulse:-40.f*delta];
     }
     
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
