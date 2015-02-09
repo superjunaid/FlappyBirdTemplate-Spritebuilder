@@ -63,8 +63,8 @@
     _clouds = @[_cloud1, _cloud2];
     _bushes = @[_bush1, _bush2];
     
-   // _parallaxBackground = [CCParallaxNode node];
-   // [_parallaxContainer addChild:_parallaxBackground];
+    _parallaxBackground = [CCParallaxNode node];
+   [_parallaxContainer addChild:_parallaxBackground];
     
     
     //Note that the bush ratio is larger than the cloud
@@ -224,7 +224,7 @@
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
     
     
-       
+    
    
     
     
