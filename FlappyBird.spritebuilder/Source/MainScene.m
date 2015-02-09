@@ -170,7 +170,7 @@
     
     _sinceTouch += delta;
     
-    character.rotation = clampf(character.rotation, -45.f, 90.f);
+    character.rotation = clampf(character.rotation, -30.f, 90.f);
     
     if (character.physicsBody.allowsRotation) {
         float angularVelocity = clampf(character.physicsBody.angularVelocity, -2.f, 1.f);
@@ -178,7 +178,7 @@
     }
     
     if ((_sinceTouch > 0.5f)) {
-        [character.physicsBody applyAngularImpulse:-4.f*delta];
+        [character.physicsBody applyAngularImpulse:-40000.f*delta];
     }
     
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
