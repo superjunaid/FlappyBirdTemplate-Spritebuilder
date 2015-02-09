@@ -209,7 +209,7 @@
         }
     }
     
-    
+    /*
     // loop the bushes
     for (CCNode * bush in _bushes) {
         //get the world position of the bush
@@ -247,6 +247,7 @@
             }
         }
     }
+     */
     
     // loop the ground
     for (CCNode *ground in _grounds) {
