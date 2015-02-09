@@ -8,6 +8,7 @@
 
 #import "MainScene.h"
 #import "Obstacle.h"
+
 @interface CGPointObject: NSObject
 {
     CGPoint _ratio;
@@ -22,7 +23,12 @@
 @end
 
 @implementation MainScene {
+ 
+    CGPoint _cloudParallaxRatio;
+    CGPoint _bushParallaxRatio;
     
+    CCNode *_parallaxContainer;
+    CCParallaxNode *_parallaxBackground;
     
     CCNode *_ground1;
     CCNode *_ground2;
@@ -35,13 +41,6 @@
     CCNode* _bush1;
     CCNode* _bush2;
     NSArray* _bushes;
-    
-    CGPoint _cloudParallaxRatio;
-    CGPoint _bushParallaxRatio;
-    
-    CCNode *_parallaxContainer;
-    CCParallaxNode *_parallaxBackground;
-
     
     NSTimeInterval _sinceTouch;
     
@@ -68,7 +67,6 @@
     [_parallaxContainer addChild:_parallaxBackground];
     
     //Note that the bush ratio is larger than the cloud
-    //Because the bush is closer to us than the clouds
     _bushParallaxRatio = ccp(0.9, 1);
     _cloudParallaxRatio = ccp(0.5, 1);
     
