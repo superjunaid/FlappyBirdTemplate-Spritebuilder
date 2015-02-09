@@ -220,7 +220,7 @@
     
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
     
-    /*
+    
     
     // move and loop the bushes
     for (CCNode *bush in _bushes) {
@@ -249,7 +249,7 @@
                                  2 * cloud.contentSize.width, cloud.position.y);
         }
     }
-    */
+    
     
    
     
